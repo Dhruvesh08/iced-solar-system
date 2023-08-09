@@ -1,0 +1,13 @@
+[package]
+name = "solar_system_wgpu"
+version = "0.1.0"
+authors = ["Héctor Ramón Jiménez <hector0193@gmail.com>"]
+edition = "2021"
+repository = "https://github.com/Dhruvesh08/iced-solar-system"
+homepage = "https://github.com/Dhruvesh08/iced-solar-system"
+publish = false
+
+[dependencies]
+iced = { version = "0.10.0", features = ["canvas", "tokio", "debug","wgpu"] }
+env_logger = "0.10.0"
+rand = "0.8.3"
