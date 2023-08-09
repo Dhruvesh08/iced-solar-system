@@ -7,11 +7,11 @@ inherit cargo
 
 # how to get solar_system_glow could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/solar_system_glow/0.1.0"
-SRC_URI += "git://github.com/Dhruvesh08/iced-solar-system.git;protocol=https;nobranch=1;branch=solar-system-glow"
-SRCREV = "f7eac966914e423bc0cd909a87b56fdfbd8fef8b"
+SRC_URI += "git://github.com/Dhruvesh08/iced-solar-system.git;protocol=https;nobranch=1;branch=solar-system-tiny-skia"
+SRCREV = "2d9c545d57467fbecf722273017558c32b858c5b"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+f7eac96691"
+PV:append = ".AUTOINC+2d9c545d57"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -62,16 +62,11 @@ SRC_URI += " \
     crate://crates.io/core-graphics/0.22.3 \
     crate://crates.io/cosmic-text/0.9.0 \
     crate://crates.io/crc32fast/1.3.2 \
-    crate://crates.io/crossbeam-channel/0.5.8 \
-    crate://crates.io/crossbeam-deque/0.8.3 \
-    crate://crates.io/crossbeam-epoch/0.9.15 \
-    crate://crates.io/crossbeam-utils/0.8.16 \
     crate://crates.io/crunchy/0.2.2 \
     crate://crates.io/d3d12/0.6.0 \
     crate://crates.io/dispatch/0.2.0 \
     crate://crates.io/dlib/0.5.2 \
     crate://crates.io/downcast-rs/1.2.0 \
-    crate://crates.io/either/1.9.0 \
     crate://crates.io/env_logger/0.10.0 \
     crate://crates.io/equivalent/1.0.1 \
     crate://crates.io/errno-dragonfly/0.1.2 \
@@ -82,7 +77,6 @@ SRC_URI += " \
     crate://crates.io/fast-srgb8/1.0.0 \
     crate://crates.io/fastrand/1.9.0 \
     crate://crates.io/fdeflate/0.3.0 \
-    crate://crates.io/find-crate/0.6.3 \
     crate://crates.io/flate2/1.0.26 \
     crate://crates.io/float_next_after/0.1.5 \
     crate://crates.io/fontdb/0.14.1 \
@@ -100,14 +94,8 @@ SRC_URI += " \
     crate://crates.io/gethostname/0.2.3 \
     crate://crates.io/getrandom/0.2.10 \
     crate://crates.io/gimli/0.27.3 \
-    crate://crates.io/glam/0.21.3 \
     crate://crates.io/glam/0.24.1 \
-    crate://crates.io/glow/0.11.2 \
     crate://crates.io/glow/0.12.3 \
-    crate://crates.io/glow_glyph/0.5.1 \
-    crate://crates.io/glyph_brush/0.7.7 \
-    crate://crates.io/glyph_brush_draw_cache/0.1.5 \
-    crate://crates.io/glyph_brush_layout/0.2.3 \
     crate://crates.io/glyphon/0.3.0 \
     crate://crates.io/gpu-alloc-types/0.2.0 \
     crate://crates.io/gpu-alloc/0.5.4 \
@@ -124,16 +112,10 @@ SRC_URI += " \
     crate://crates.io/humantime/2.1.0 \
     crate://crates.io/iced/0.10.0 \
     crate://crates.io/iced_core/0.10.0 \
-    crate://crates.io/iced_core/0.9.0 \
-    crate://crates.io/iced_futures/0.6.0 \
     crate://crates.io/iced_futures/0.7.0 \
-    crate://crates.io/iced_glow/0.8.0 \
-    crate://crates.io/iced_graphics/0.8.0 \
     crate://crates.io/iced_graphics/0.9.0 \
-    crate://crates.io/iced_native/0.10.3 \
     crate://crates.io/iced_renderer/0.1.0 \
     crate://crates.io/iced_runtime/0.1.1 \
-    crate://crates.io/iced_style/0.8.0 \
     crate://crates.io/iced_style/0.9.0 \
     crate://crates.io/iced_tiny_skia/0.1.0 \
     crate://crates.io/iced_wgpu/0.11.1 \
@@ -154,7 +136,6 @@ SRC_URI += " \
     crate://crates.io/libloading/0.7.4 \
     crate://crates.io/libloading/0.8.0 \
     crate://crates.io/libm/0.2.7 \
-    crate://crates.io/linked-hash-map/0.5.6 \
     crate://crates.io/linux-raw-sys/0.4.5 \
     crate://crates.io/lock_api/0.4.10 \
     crate://crates.io/log/0.4.19 \
@@ -170,7 +151,6 @@ SRC_URI += " \
     crate://crates.io/memmap2/0.6.2 \
     crate://crates.io/memoffset/0.6.5 \
     crate://crates.io/memoffset/0.7.1 \
-    crate://crates.io/memoffset/0.9.0 \
     crate://crates.io/metal/0.24.0 \
     crate://crates.io/minimal-lexical/0.2.1 \
     crate://crates.io/miniz_oxide/0.7.1 \
@@ -200,11 +180,8 @@ SRC_URI += " \
     crate://crates.io/object/0.31.1 \
     crate://crates.io/once_cell/1.18.0 \
     crate://crates.io/orbclient/0.3.46 \
-    crate://crates.io/ordered-float/3.7.0 \
     crate://crates.io/owned_ttf_parser/0.19.0 \
-    crate://crates.io/palette/0.6.1 \
     crate://crates.io/palette/0.7.2 \
-    crate://crates.io/palette_derive/0.6.1 \
     crate://crates.io/palette_derive/0.7.2 \
     crate://crates.io/parking_lot/0.11.2 \
     crate://crates.io/parking_lot/0.12.1 \
@@ -231,8 +208,6 @@ SRC_URI += " \
     crate://crates.io/range-alloc/0.1.3 \
     crate://crates.io/rangemap/1.3.0 \
     crate://crates.io/raw-window-handle/0.5.2 \
-    crate://crates.io/rayon-core/1.11.0 \
-    crate://crates.io/rayon/1.7.0 \
     crate://crates.io/redox_syscall/0.2.16 \
     crate://crates.io/redox_syscall/0.3.5 \
     crate://crates.io/regex-automata/0.3.6 \
@@ -246,7 +221,6 @@ SRC_URI += " \
     crate://crates.io/scoped-tls/1.0.1 \
     crate://crates.io/scopeguard/1.2.0 \
     crate://crates.io/sctk-adwaita/0.5.4 \
-    crate://crates.io/serde/1.0.183 \
     crate://crates.io/simd-adler32/0.3.7 \
     crate://crates.io/siphasher/0.3.10 \
     crate://crates.io/slab/0.4.8 \
@@ -274,7 +248,6 @@ SRC_URI += " \
     crate://crates.io/tinyvec/1.6.0 \
     crate://crates.io/tinyvec_macros/0.1.1 \
     crate://crates.io/tokio/1.29.1 \
-    crate://crates.io/toml/0.5.11 \
     crate://crates.io/toml_datetime/0.6.3 \
     crate://crates.io/toml_edit/0.19.14 \
     crate://crates.io/ttf-parser/0.19.1 \
@@ -347,7 +320,6 @@ SRC_URI += " \
     crate://crates.io/x11rb/0.11.1 \
     crate://crates.io/x11rb/0.9.0 \
     crate://crates.io/xcursor/0.3.4 \
-    crate://crates.io/xi-unicode/0.3.0 \
     crate://crates.io/xml-rs/0.8.16 \
     crate://crates.io/yazi/0.1.6 \
     crate://crates.io/zeno/0.2.2 \

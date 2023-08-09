@@ -1,5 +1,5 @@
 [package]
-name = "solar_system_glow"
+name = "solar_system_tiny_skia"
 version = "0.1.0"
 authors = ["Héctor Ramón Jiménez <hector0193@gmail.com>"]
 edition = "2021"
