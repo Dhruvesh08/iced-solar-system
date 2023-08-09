@@ -8,10 +8,10 @@ inherit cargo
 # how to get solar_system_wgpu could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/solar_system_wgpu/0.1.0"
 SRC_URI += "git://github.com/Dhruvesh08/iced-solar-system.git;protocol=https;nobranch=1;branch=main"
-SRCREV = "055ae93bab02f829dd4825d2872b7b721d101d09"
+SRCREV = "f145359482d061cbb84a961d18a788e7aaf975a6"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR = ""
-PV:append = ".AUTOINC+055ae93bab"
+PV:append = ".AUTOINC+f145359482"
 
 # please note if you have entries that do not begin with crate://
 # you must change them to how that package can be fetched
@@ -332,7 +332,7 @@ LIC_FILES_CHKSUM = " \
     "
 
 SUMMARY = "solar_system_wgpu"
-HOMEPAGE = "https://github.com/Dhruvesh08/iced-solar-system"
+HOMEPAGE = "https://github.com/Dhruvesh08/iced-solar-systemc"
 LICENSE = "CLOSED"
 
 # includes this file if it exists but does not fail
